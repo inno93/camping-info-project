@@ -8,9 +8,8 @@ let page = urlSearch.get('page') == null ? 1 : urlSearch.get('page');
 
 //캠핑장 전체 가져오기
 var xhr = new XMLHttpRequest();
-var url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/locationBasedList'; /*URL*/
 var appKey = `gmQchDJDvzA%2BuZgXFbpKOvwhz5uzY7mnPQWpiDawvXy52atdwhGRlGUYPoiYmVatagXUxCKwwoyEtSIki1Gu5g%3D%3D`;
-var url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/basedList'; /*URL*/
+var url = 'https://api.visitkorea.or.kr/openapi/service/rest/GoCamping/basedList'; /*URL*/
 var queryParams = '?' + encodeURIComponent('serviceKey') + '='+ appKey; /*Service Key*/
 queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent(page); /**/
 queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('9'); /**/
