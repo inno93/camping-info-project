@@ -40,7 +40,7 @@ if(contentId == null) {
  
 //위치 기반정보 목록 조회
 var xhr = new XMLHttpRequest();
-var url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/locationBasedList'; /*URL*/
+var url = 'https://api.visitkorea.or.kr/openapi/service/rest/GoCamping/locationBasedList'; /*URL*/
 var appKey = `gmQchDJDvzA%2BuZgXFbpKOvwhz5uzY7mnPQWpiDawvXy52atdwhGRlGUYPoiYmVatagXUxCKwwoyEtSIki1Gu5g%3D%3D`;
 var queryParams = '?' + encodeURIComponent('serviceKey') + '='+ appKey; /*Service Key*/
 queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
@@ -65,7 +65,7 @@ xhr.send();
 //이미지정보 목록 조회
 
 var xhr1 = new XMLHttpRequest();
-url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/imageList'; /*URL*/
+url = 'https://api.visitkorea.or.kr/openapi/service/rest/GoCamping/imageList'; /*URL*/
 queryParams = '?' + encodeURIComponent('serviceKey') + '='+ appKey; /*Service Key*/
 queryParams += '&' + encodeURIComponent('MobileOS') + '=' + encodeURIComponent('ETC'); /**/
 queryParams += '&' + encodeURIComponent('MobileApp') + '=' + encodeURIComponent('AppTest'); /**/
